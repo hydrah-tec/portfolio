@@ -1,0 +1,64 @@
+.main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.main .title {
+  font-size: 2.5rem;
+}
+.about .about_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 5px;
+
+}
+.about .about_box .about_img {
+  width: 300px;
+  border-radius: 5px;
+}
+.about .about_box .about_img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.about .about_box .about_text {
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px black;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.about .about_box .about_text h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.about .about_box .about_text p {
+  font-size: 1.7rem;
+  padding: 5px;
+  line-height: 25px;
+}
+.about .about_box .about_text span {
+  font-weight: 600;
+}
+@media screen and (max-width: 764px) {
+  .about .about_box .about_text {
+    width: 100%;
+    padding: 10px;
+  }
+}

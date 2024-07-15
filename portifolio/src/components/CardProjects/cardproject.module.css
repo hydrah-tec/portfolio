@@ -1,0 +1,59 @@
+@charset 'utf-8';
+
+.project {
+  width: 250px;
+  border: 2px solid var(--secondary_color);
+  box-shadow:
+    1px 1px 5px black,
+    1px 1px 10px rgba(5, 5, 5, 0.507);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.project img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.project .content {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project .content .vermais {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  border-top: 1px solid;
+}
+.project .content .vermais a {
+  display: inline-block;
+  width: 50%;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.8rem;
+  background-color: var(--amarelo);
+  color: var(--text_color);
+  transition: 300ms ease-in-out;
+}
+.project .content .vermais a:hover {
+  color: var(--primary_color);
+  background-color: var(--secondary_color);
+}
+.project .content .vermais a:first-child {
+  border-bottom-left-radius: 10px;
+  border-right: 1px solid;
+}
+.project .content .vermais a:last-child {
+  border-bottom-right-radius: 10px;
+  border-left: 1px solid;
+}
+.project h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.project p {
+  font-size: 2rem;
+  padding: 3px;
+}
